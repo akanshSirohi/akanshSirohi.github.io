@@ -2,15 +2,15 @@
 ### I'm a Full-stack Software Developer and AI Enthusiast! 
 
 ## My Skills ⚡
-- JAVA | JavaFX
+- JAVA, JavaFX
 - CSharp
 - Android
-- React Native | Expo
+- React Native, Expo
 - NodeJS
 - ElectronJS
 - <b>M</b>ongoDB <b>E</b>xpressJS <b>R</b>eactJS <b>N</b>odeJS
 - Python
-- PHP | CodeIgnitor
+- PHP, CodeIgnitor
 
 ### Focusing 🎯
 
