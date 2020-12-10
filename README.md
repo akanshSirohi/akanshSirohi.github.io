@@ -21,5 +21,5 @@
 
 ### Connect with me:
 
-` 💬 Feel free to reach me anytime! ` <br>
-` 📫 Just create issue on this repo and I will reply you! `
+  💬 `Feel free to reach me anytime!` <br>
+  📫 `Just create issue on this repo and I will reply you! `
