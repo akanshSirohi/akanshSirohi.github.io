@@ -1,0 +1,26 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.card-header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0);
+}
+.form-inline {
+    background-color: rgba(0,0,0,0.3);
+    padding:5px;
+    border-radius: 10px;
+    display: inline-flex;
+    margin-bottom: 5px;
+}
+.scroll_div {
+    overflow-y: scroll;
+    height: 150px;
+}
