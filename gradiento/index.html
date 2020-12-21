@@ -1,81 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gradiento!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./libs/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./libs/bootstrap.min.css" />
     <script src="./libs/jquery-3.5.1.min.js"></script>
     <script src="./libs/popper.min.js"></script>
     <script src="./libs/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./randomColor.js"></script>
     <script src="./libs/clipboard.min.js"></script>
     <script src="./script.js"></script>
-</head>
-<body id="bdy">
+    <style>
+      .col-md-3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body id="bdy">
     <div class="container">
-        <div class="row mt-5 mb-5">
-            <div class="col-md-12 m-auto">
-                <div class="card border-primary">
-                    <div class="card-header">
-                        <h2 class="text-center">Gradiento!</h2>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col scroll_div" id="colors_container">
-                                <div class="form-inline" id="cont_1">
-                                    <input type="color" value="#d30007" id="color_1" class="color">&nbsp;&nbsp;&nbsp;
-                                    <input type="range" class="custom-range col_range" id="col_range_1" step="1" min="0" max="100" value="0" style="width: 55%;">&nbsp;&nbsp;&nbsp;
-                                    <button class="btn btn-secondary minus" data-id="1"><i class="fa fa-minus-square"></i></button>
-                                </div>
-                                <div class="form-inline" id="cont_2">
-                                    <input type="color" value="#9400d3" id="color_2" class="color">&nbsp;&nbsp;&nbsp;
-                                    <input type="range" class="custom-range col_range" id="col_range_2" step="1" min="0" max="100" value="0" style="width: 55%;">&nbsp;&nbsp;&nbsp;
-                                    <button class="btn btn-secondary minus" data-id="2"><i class="fa fa-minus-square"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-sm-8 mx-auto">
-                                <div class="row mt-3">
-                                    <div class="col lin">
-                                        <input type="range" class="custom-range" step="1" min="0" max="360" id="degg" value="180" style="margin-top: 7px;">
-                                    </div>
-                                    <div class="col lin">
-                                        <input type="number" value="1" class="form-control" id="deg_num">
-                                    </div>
-                                    <div class="col">
-                                        <button class="btn btn-secondary" id="btn_addGrad" style="width: 100%;">Add Gradient&nbsp;&nbsp;<i class="fa fa-plus-square"></i></button>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <select class="custom-select" id="g_type">
-                                                <option value="linear" selected>Linear</option>
-                                                <option value="radial">Radial</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="m-auto col">
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="gCode">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary cpy" data-clipboard-target="#gCode">Copy</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>       
-                </div>
+      <div class="row mt-5 mb-5">
+        <div class="col-md-12 m-auto">
+          <div class="card border-primary">
+            <div class="card-header">
+              <h2 class="text-center">Gradiento!</h2>
             </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col scroll_div" id="colors_container">
+                  <div class="form-inline" id="cont_1">
+                    <input
+                      type="color"
+                      value="#d30007"
+                      id="color_1"
+                      class="color"
+                    />&nbsp;&nbsp;&nbsp;
+                    <input
+                      type="range"
+                      class="custom-range col_range"
+                      id="col_range_1"
+                      step="1"
+                      min="0"
+                      max="100"
+                      value="0"
+                      style="width: 55%"
+                    />&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-secondary minus" data-id="1">
+                      <i class="fa fa-minus-square"></i>
+                    </button>
+                  </div>
+                  <div class="form-inline" id="cont_2">
+                    <input
+                      type="color"
+                      value="#9400d3"
+                      id="color_2"
+                      class="color"
+                    />&nbsp;&nbsp;&nbsp;
+                    <input
+                      type="range"
+                      class="custom-range col_range"
+                      id="col_range_2"
+                      step="1"
+                      min="0"
+                      max="100"
+                      value="0"
+                      style="width: 55%"
+                    />&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-secondary minus" data-id="2">
+                      <i class="fa fa-minus-square"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-8 mx-auto">
+                  <div class="row mt-3">
+                    <div class="col-md-3 lin">
+                      <input
+                        type="range"
+                        class="custom-range"
+                        step="1"
+                        min="0"
+                        max="360"
+                        id="degg"
+                        value="180"
+                        style="margin-top: 7px"
+                      />
+                    </div>
+                    <div class="col-md-3 lin">
+                      <input
+                        type="number"
+                        value="1"
+                        class="form-control"
+                        id="deg_num"
+                      />
+                    </div>
+                    <div class="col-md-3">
+                      <button
+                        class="btn btn-secondary"
+                        id="btn_addGrad"
+                        style="width: 100%"
+                      >
+                        Add Gradient&nbsp;&nbsp;<i
+                          class="fa fa-plus-square"
+                        ></i>
+                      </button>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <select class="custom-select" id="g_type">
+                          <option value="linear" selected>Linear</option>
+                          <option value="radial">Radial</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="m-auto col">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="gCode" />
+                      <div class="input-group-append">
+                        <button
+                          class="btn btn-primary cpy"
+                          data-clipboard-target="#gCode"
+                        >
+                          Copy
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
