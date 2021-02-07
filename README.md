@@ -19,6 +19,10 @@
 - 👯 I’m looking to collaborate with whoever interested with unique ideas
 - ⚡ Fact: `Sometimes promises are required for callbacks...`
 
+### ShareX
+- [Preview On Play Store](https://play.google.com/store/apps/details?id=com.akansh.fileserversuitfree)
+
+
 ### Connect with me:
 
   💬 `Feel free to reach me anytime!` <br />
