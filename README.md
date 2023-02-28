@@ -17,15 +17,17 @@ This is the place where I opensource stuff and break things 🤣
 
 ### Focusing 🎯
 
-- 🔭 I’m currently working on some cross platform apps
+- 🔭 I’m currently working on some magical things... 😜
 - 🌱 I’m currently learning many things
 - 👯 I’m looking to collaborate with whoever interested with unique ideas
+- 📌 Based on India 🇮🇳
+- 💬 Ask me about anything. I won't know the answer anyway
 - ⚡ Fact: `Sometimes promises are required for callbacks...`
 
 ### Connect with me 🤝
 [![Linkedin Badge](https://img.shields.io/badge/-akansh--sirohi-0077B5?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/akansh-sirohi)](https://www.linkedin.com/in/akansh-sirohi)
 [![ProtonMail Badge](https://img.shields.io/badge/-akanshsirohi-8B89CC?style=flat&logo=protonmail&logoColor=white&link=mailto:akanshsirohi@protonmail.com)](mailto:akanshsirohi@protonmail.com)
-[![Website Badge](https://img.shields.io/badge/-akanshsirohi.herokuapp.com-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://akanshsirohi.herokuapp.com)](https://akanshsirohi.herokuapp.com)
+[![Website Badge](https://img.shields.io/badge/-akansh.onrender.com-47CCCC?style=flat&logo=Google-Chrome&logoColor=white&link=https://akansh.onrender.com)](https://akansh.onrender.com)
 [![Twitter Badge](https://img.shields.io/badge/-@akansh__sirohi-1ca0f1?style=flat&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/akansh__sirohi)](https://twitter.com/akansh__sirohi)
 
 💬 Feel free to reach me anytime  <br>
@@ -36,9 +38,11 @@ Write the following command in your terminal to view it: `npx akansh`
 
 ### CARDS
 - Random Joke
-<img src="https://github-cards-api.herokuapp.com/jokes-card?theme=dark" />
+<img src="https://github-cards.onrender.com/jokes-card?theme=dark" />
 
 - Random Quote
-<img src="https://github-cards-api.herokuapp.com/programming-quotes-card" />
+<img src="https://github-cards.onrender.com/programming-quotes-card" />
+
+Get Your Own Card From Here: [Github Cards API](https://github.com/akanshSirohi/Github-Cards-API)
 
 ![](https://komarev.com/ghpvc/?username=akanshSirohi&color=brightgreen&label=Visitors)
