@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.dropdown-item {
+    cursor: pointer;
+}
+* {
+    font-family: 'Ubuntu', sans-serif;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=" https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/zephyr/bootstrap.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Super Search</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-6 text-center">
+          <div class="text-center">
+            <img src="user-secret.svg" alt="Logo" class="img-fluid mx-3" width="100" />
+            <h1 class="mt-2">
+              Super Search
+            </h1>
+          </div>
+          <form class="mt-4">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                  <div class="nav-item dropdown">
+                    <button class="dropdown-toggle btn btn-outline-secondary" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Video</button>
+                    <div class="dropdown-menu" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 42.4px, 0px);" data-popper-placement="bottom-start">
+                      <a class="dropdown-item" data-value="Video" data-code="0">Video</a>
+                      <a class="dropdown-item" data-value="Audio" data-code="1">Audio</a>
+                      <a class="dropdown-item" data-value="Ebook" data-code="2">Ebook</a>
+                      <a class="dropdown-item" data-value="Pictures" data-code="3">Pictures</a>
+                      <a class="dropdown-item" data-value="Software/Games" data-code="4">Software/Games</a>
+                      <a class="dropdown-item" data-value="Compressed" data-code="5">Compressed</a>
+                    </div>
+                  </div>
+              </div>
+              <input type="text" class="form-control" placeholder="Search Google" id="query">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="search-btn">Search</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
