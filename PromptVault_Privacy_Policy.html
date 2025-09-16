@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — PromptVault</title>
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root {
+      --fg: #1b1b1b;
+      --bg: #ffffff;
+      --muted: #555;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e6e6e6;
+        --bg: #0b0b0b;
+        --muted: #9aa0a6;
+        --border: #23262b;
+      }
+    }
+    html, body {
+      padding: 0;
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.7;
+    }
+    main {
+      max-width: 860px;
+      margin: 3rem auto;
+      padding: 0 1.25rem;
+    }
+    h1, h2, h3 {
+      line-height: 1.25;
+    }
+    h1 { font-size: 2rem; margin: 0 0 1rem; }
+    h2 { font-size: 1.35rem; margin-top: 2rem; }
+    h3 { font-size: 1.1rem; margin-top: 1.5rem; }
+    p { margin: 0.75rem 0; }
+    blockquote {
+      margin: 1rem 0;
+      padding: 0.75rem 1rem;
+      border-left: 4px solid var(--border);
+      background: rgba(125,125,125,0.06);
+    }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.4rem 0; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+    a { color: inherit; text-decoration: underline; }
+    footer { margin-top: 3rem; font-size: 0.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+  <h1>Privacy Policy — PromptVault</h1>
+
+<p><strong>Effective date:<strong> 16 September 2025  </p>
+<p><strong>Developer (“we”, “us”, “our”):<strong> Akansh Sirohi  </p>
+<p><strong>Contact:<strong> akanshsirohi.dev@gmail.com</p>
+
+<h2>1) What this policy covers</h2>
+<p>This Privacy Policy explains what data PromptVault collects, why we collect it, how we use it, and the choices you have. PromptVault is a free, closed-source Android app. We don’t sell your data, and we don’t use your data for advertising.</p>
+
+<h2>2) What we collect</h2>
+<p>We aim to keep data collection minimal and only for making the app work.</p>
+
+<ul>
+<li><strong>Account data (Firebase Auth – Google Sign-In):<strong> your Google user ID, display name, email, and profile photo (if available).</li>
+</ul>
+<p>  *Purpose:* authenticate you, keep your content uniquely associated with your account, and prevent abuse.</p>
+
+<ul>
+<li><strong>App content you create/store (Cloud Firestore):<strong> your prompts, collections, and metadata (timestamps, simple usage flags like favorites).</li>
+</ul>
+<p>  *Purpose:* store and sync your content across sessions/devices.</p>
+
+<ul>
+<li><strong>Diagnostics &amp; crash data (Firebase Crashlytics):<strong> app version, device model, OS version, crash stack traces, and non-personal technical logs.</li>
+</ul>
+<p>  *Purpose:* monitor stability and fix bugs.</p>
+
+<ul>
+<li><strong>Local storage on device:<strong> we may cache your content locally to enable offline use and better performance.</li>
+</ul>
+<p>  *Purpose:* offline-first operation and speed.</p>
+
+<blockquote>**We do not collect:** contact lists, precise location, microphone/recordings, or unrelated files.</blockquote>
+<blockquote>**We do not use or sell your data** for ads or marketing. Your data is used only to provide and improve the service.</blockquote>
+
+<h2>3) How we use data</h2>
+<ul>
+<li>To authenticate you with Google and maintain your session.</li>
+<li>To store, sync, and back up your prompts and collections in Firestore.</li>
+<li>To diagnose crashes and improve reliability using Crashlytics.</li>
+<li>To enforce limits, prevent abuse, and keep the service secure.</li>
+</ul>
+
+<h2>4) Legal bases (where applicable)</h2>
+<ul>
+<li><strong>Performance of a contract:<strong> providing the service you requested.</li>
+<li><strong>Legitimate interests:<strong> app security, service reliability, and abuse prevention.</li>
+<li><strong>Consent:<strong> your use of Google Sign-In and any permissions you explicitly grant.</li>
+</ul>
+
+<h2>5) Data sharing</h2>
+<p>We use <strong>Google Firebase<strong> (a Google service) as our processor for Auth, Firestore, and Crashlytics. Aside from Firebase’s role as our infrastructure provider, we don’t share your personal data with third parties. We don’t sell data.</p>
+
+<h2>6) Data retention &amp; deletion</h2>
+<ul>
+<li><strong>Your content:<strong> retained while your account exists or until you delete it.</li>
+<li><strong>Anonymous accounts:<strong> may be deleted at any time due to strict resource limits.</li>
+<li><strong>Service pauses:<strong> if we need to pause or discontinue the online service, we’ll show an in-app notice and provide time and instructions to <strong>back up your data<strong> so you can keep using an offline version.</li>
+<li><strong>How to delete your data:<strong> email <strong>akanshsirohi.dev@gmail.com<strong> with your request from the Google account you use with PromptVault. We’ll delete linked Firestore data within a reasonable time unless retention is required by law, security, or abuse prevention.</li>
+</ul>
+
+<h2>7) International transfers</h2>
+<p>Firebase may process and store data on servers outside your country. We rely on standard protections offered by Google/Firebase for these transfers.</p>
+
+<h2>8) Security</h2>
+<p>We use reasonable technical and organizational measures (Firebase security rules, least-privilege access). No method of transmission or storage is 100% secure.</p>
+
+<h2>9) Children</h2>
+<p>PromptVault is not directed to children under 13. If you believe a child has used the app, contact us to remove associated data.</p>
+
+<h2>10) Your rights</h2>
+<p>Subject to local law, you may request access, correction, export, or deletion of your data by contacting us. We will respond within a reasonable timeframe.</p>
+
+<h2>11) Changes</h2>
+<p>We may update this Privacy Policy. Significant changes will be communicated in-app or by updating the effective date above.</p>
+
+<hr/>
+
+<p>*This Privacy Policy is provided for your convenience and does not constitute legal advice.*</p>
+  <footer>
+    <hr/>
+    <div>© PromptVault. All rights reserved.</div>
+  </footer>
+  </main>
+</body>
+</html>
