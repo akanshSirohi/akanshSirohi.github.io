@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PromptVault — Account & Data Deletion</title>
+  <meta name="description" content="How to request deletion of your PromptVault account and associated data." />
+  <style>
+    :root{--fg:#111;--muted:#555;--bg:#fff;--card:#f7f7f8;--accent:#2563eb}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;color:var(--fg);background:var(--bg);margin:0;padding:0}
+    header{padding:32px 20px;background:linear-gradient(0deg,var(--card),#fff)}
+    main{max-width:880px;margin:0 auto;padding:24px 20px 60px}
+    h1{margin:8px 0 0;font-size:28px}
+    .tag{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:6px 12px;font-size:12px;letter-spacing:.3px}
+    .card{background:var(--card);padding:20px;border-radius:16px;margin:16px 0}
+    .muted{color:var(--muted)}
+    code{background:#eef2ff;padding:2px 6px;border-radius:6px}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    ul{margin:0 0 0 18px}
+    footer{font-size:13px;color:var(--muted);padding-top:20px;border-top:1px solid #e6e6e6}
+    .btn{display:inline-block;border:1px solid var(--accent);color:#fff;background:var(--accent);padding:10px 14px;border-radius:10px}
+    .btn.secondary{background:transparent;color:var(--accent)}
+    .twocol{display:grid;grid-template-columns:1fr;gap:16px}
+    @media(min-width:720px){.twocol{grid-template-columns:1fr 1fr}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"How can I delete my PromptVault account?",
+        "acceptedAnswer":{"@type":"Answer","text":"Open the PromptVault app → Profile → Settings → Delete Account. If you are unable to access the app, email akanshsirohi.dev@gmail.com from the Google account you used to sign in with the subject 'Delete PromptVault Account' and include your UID if available."}
+      },
+      {
+        "@type":"Question",
+        "name":"What data will be deleted?",
+        "acceptedAnswer":{"@type":"Answer","text":"Your Firebase Authentication account (Google Sign-In identity) and all prompts and metadata stored in our database under your user ID (UID). Backups and logs are purged within 30 days."}
+      },
+      {
+        "@type":"Question",
+        "name":"What data might be retained and why?",
+        "acceptedAnswer":{"@type":"Answer","text":"Security, fraud-prevention, and legal logs may be retained for up to 30 days, after which they are automatically removed. No data is sold or shared for advertising."}
+      },
+      {
+        "@type":"Question",
+        "name":"How long does deletion take?",
+        "acceptedAnswer":{"@type":"Answer","text":"In-app deletion is immediate for active records and completes within 30 days for backups and logs. Email requests are acknowledged within 48 hours and processed within 7 days."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <span class="tag">PromptVault</span>
+    <h1>Account & Data Deletion</h1>
+    <p class="muted">This page explains how you can request deletion of your account and associated data for the PromptVault app.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Delete your account (fastest)</h2>
+      <ol>
+        <li>Open the <strong>PromptVault</strong> app on your Android device.</li>
+        <li>Go to <strong>About → Delete Account</strong>.</li>
+        <li>Confirm. Your account and prompts will be scheduled for deletion.</li>
+      </ol>
+      <p class="muted">If the option isn’t visible yet or you cannot access the app, use the email request below.</p>
+      <p>
+        <a class="btn" href="mailto:akanshsirohi.dev@gmail.com?subject=Delete%20PromptVault%20Account&body=Please%20delete%20my%20PromptVault%20account.%0A%0AGoogle%20account%20(email):%20%0AUser%20ID%20(UID%2C%20if%20known):%20%0AReason%20(optional):%20">Request via Email</a>
+        <a class="btn secondary" href="mailto:akanshsirohi.dev@gmail.com">Contact support</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>What we delete</h2>
+      <ul>
+        <li>Your <strong>Firebase Authentication</strong> user (Google Sign‑In).</li>
+        <li>All <strong>prompt data</strong> you created in PromptVault (stored under your UID).</li>
+        <li>Associated metadata (tags, titles, timestamps, collections).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>What we may keep temporarily</h2>
+      <ul>
+        <li>Minimal security and operational logs for up to <strong>30 days</strong> for abuse prevention and legal compliance.</li>
+      </ul>
+      <p class="muted">We do <strong>not</strong> sell your data. See our Privacy Policy for details.</p>
+    </section>
+
+    <section class="card twocol">
+      <div>
+        <h3>Identity verification</h3>
+        <p>For email requests, contact us from the same Google account you used to sign in. We may ask for your in‑app UID to ensure we delete the correct account.</p>
+      </div>
+      <div>
+        <h3>Timeline</h3>
+        <ul>
+          <li><strong>App-initiated:</strong> Immediate for active records; backups/logs within 30 days.</li>
+          <li><strong>Email request:</strong> Acknowledgement in 48 hours; completion within 7 days.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      Developer: <strong>Akansh Sirohi</strong> · Contact: <a href="mailto:akanshsirohi.dev@gmail.com">akanshsirohi.dev@gmail.com</a><br>
+      Last updated: <span id="lu"></span>
+    </footer>
+  </main>
+  <script>
+    document.getElementById('lu').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
